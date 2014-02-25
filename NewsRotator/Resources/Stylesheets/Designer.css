@@ -1,0 +1,54 @@
+﻿
+
+li.ImageOnlyView label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.ImageOnlyView.gif") %>) no-repeat;
+}
+li.LeftView label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.LeftView.gif") %>) no-repeat;
+}
+li.LeftViewOverlay label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.LeftViewOverlay.gif") %>) no-repeat;
+}
+li.RightView label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.RightView.gif") %>) no-repeat;
+}
+li.RightViewOverlay label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.RightViewOverlay.gif") %>) no-repeat;
+}
+li.WideView label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.WideView.gif") %>) no-repeat;
+}
+li.WideViewOverlay label
+{
+    background: transparent url(<% = WebResource("NewsRotator.Resources.Icons.Designer.WideViewOverlay.gif") %>) no-repeat;
+}
+
+.RotatorDesignList {
+margin-top:15px;
+}
+.RotatorDesignList li {
+position:relative;
+z-index:10;
+height:35px;
+}
+.RotatorDesignList li input {
+left:65px;
+position:absolute;
+top:3px;
+z-index:100;
+}
+.RotatorDesignList li label {
+display:block;
+padding-left:82px;
+height: 26px;
+}
+.RotatorDesignList li label .sfNote {
+display:block;
+line-height:1.2;
+}

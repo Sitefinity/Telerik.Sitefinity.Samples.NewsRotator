@@ -1,0 +1,20 @@
+﻿.ArticleBackgroundWideView
+{
+    position:absolute;
+    bottom: 0%; 
+    left: 0%;
+    width: 0%;
+    height: 0%;
+}
+
+.ArticleWideView
+{
+    top: 100%; 
+    left: 1%;
+    width: 99%;
+}
+.ImageWideView
+{
+	height: 70%;
+	width: 100%;
+}

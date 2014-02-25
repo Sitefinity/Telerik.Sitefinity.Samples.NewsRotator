@@ -1,0 +1,20 @@
+﻿.ArticleBackgroundLeftViewOverlay
+{   
+    position:relative;
+    bottom: 0%; 
+    left: 50%;
+    width:50%;
+    height:100%;
+}
+
+.ArticleLeftViewOverlay
+{
+    left:51%;
+    top:-98%;
+    width: 49%;
+}
+.ImageLeftViewOverlay
+{
+	height: 100%;
+	width: 100%;
+}

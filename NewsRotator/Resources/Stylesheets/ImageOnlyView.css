@@ -1,0 +1,20 @@
+﻿.ArticleBackgroundImageOnlyView
+{   
+    height: 12%;
+    left: 0;
+    position: relative;
+    top: 88%;
+    width: 100%;
+}
+
+.ArticleImageOnlyView
+{
+    left: 1%;
+    top: 78%;
+    margin-right: 1%;
+}
+.ImageImageOnlyView
+{
+	height: 100%;
+	width: 100%;
+}

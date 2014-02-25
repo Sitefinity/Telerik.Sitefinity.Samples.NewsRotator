@@ -1,0 +1,21 @@
+﻿.ArticleBackgroundRightViewOverlay
+{   
+    position:relative;
+    bottom: 0%; 
+    right: 0%;
+    width: 50%;
+    height: 100%;
+}
+
+.ArticleRightViewOverlay
+{
+    left:1%;
+    right:0;
+    top:-100%;
+    width: 49%;
+}
+.ImageRightViewOverlay
+{
+	height: 100%;
+	width: 100%;
+}
