@@ -14,8 +14,6 @@ Using the NewsRotator sample, you can:
 
 ### Requirements
 
-* Sitefinity 6.3 license
-
 * .NET Framework 4
 
 * Visual Studio 2012
