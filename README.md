@@ -1,6 +1,8 @@
 Telerik.Sitefinity.Samples.NewsRotator
 ======================================
 
+[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.NewsRotator.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.NewsRotator.CI/)
+
 The NewsRotator sample project contains a simple Sitefinity widget that rotates news and images present in the Sitefinity backend. The sample features a custom designer that allows you to change the front-end rendering of the widget by switching its template. The NewsRotator widget is built on top of RadRotator widget, part of RadControls for ASP.NET Ajax delivered with this toolkit.
 
 You can run the sample with any type of license. 
