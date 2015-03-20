@@ -28,6 +28,11 @@ Clear the NuGet cache files. To do this:
 1. In Windows Explorer, open the **%localappdata%\NuGet\Cache** folder.
 2. Select all files and delete them.
 
+### Nuget package restoration
+The solution in this repository relies on NuGet packages with automatic package restore while the build procedure takes place.   
+For a full list of the referenced packages and their versions see the [packages.config](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.NewsRotator/blob/master/SitefinityWebApp/packages.config) file.    
+For a history and additional information related to package versions on different releases of this repository, see the [Releases page](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.NewsRotator/releases).    
+
 
 ### Installation instructions: SDK Samples from GitHub
 
@@ -51,3 +56,4 @@ Sitefinity documentation
 * [Development: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)
 * [NewsRotator widget: Create the NewsRotator as a custom widget](http://docs.sitefinity.com/newsrotator-widget-create-the-newsrotator-as-a-custom-widget)
 * [NewsRotator widget: Create the NewsRotator as a user widget](http://docs.sitefinity.com/newsrotator-widget-create-the-newsrotator-as-a-user-widget)
+
