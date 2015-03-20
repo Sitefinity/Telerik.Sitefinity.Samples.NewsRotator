@@ -37,17 +37,18 @@ For a history and additional information related to package versions on differen
 ### Installation instructions: SDK Samples from GitHub
 
 
-1. In Solution Explorer, navigate to _SitefinityWebApp_ -> *App_Data* -> _Sitefinity_ -> _Configuration_ and select the **DataConfig.config** file. 
-2. Modify the **connectionString** value to match your server address.
+1. In Solution Explorer, navigate to _SitefinityWebApp_ » *App_Data* » _Sitefinity_ » _Configuration_ and select the **StartupConfig.config** file. 
+2. Modify the **dbType**, **sqlInstance** and **dbName** values to match your server settings.
+3. Build the solution.
 
-For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases]
- (https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.NewsRotator/releases).
+For version-specific details about the required Sitefinity NuGet packages for this sample application, see [Releases](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.NewsRotator/releases).
 
 
 ### Login
 
 To login to Sitefinity backend, use the following credentials: 
 
+<<<<<<< HEAD
 **Username:** admin
 **Password:** password
 
@@ -56,4 +57,14 @@ To login to Sitefinity backend, use the following credentials:
 [Developers Guide](http://www.sitefinity.com/documentation/documentationarticles/developers-guide)
 [Create a NewsRotaor widget as a custom widget](http://www.sitefinity.com/documentation/documentationarticles/developers-guide/how-to/how-to-create-a-newsrotator-control/creating-the-newsrotator-as-a-custom-control)
 [Create a NewsRotaor widget as a user widget](http://www.sitefinity.com/documentation/documentationarticles/developers-guide/how-to/how-to-create-a-newsrotator-control/creating-the-newsrotator-as-a-user-control)
+=======
+**Username:** admin  
+**Password:** password
+
+### Additional resources
+Sitefinity documentation
+* [Development: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)
+* [NewsRotator widget: Create the NewsRotator as a custom widget](http://docs.sitefinity.com/newsrotator-widget-create-the-newsrotator-as-a-custom-widget)
+* [NewsRotator widget: Create the NewsRotator as a user widget](http://docs.sitefinity.com/newsrotator-widget-create-the-newsrotator-as-a-user-widget)
+>>>>>>> review
 
