@@ -51,4 +51,3 @@ Sitefinity documentation
 * [Development: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)
 * [NewsRotator widget: Create the NewsRotator as a custom widget](http://docs.sitefinity.com/newsrotator-widget-create-the-newsrotator-as-a-custom-widget)
 * [NewsRotator widget: Create the NewsRotator as a user widget](http://docs.sitefinity.com/newsrotator-widget-create-the-newsrotator-as-a-user-widget)
-
