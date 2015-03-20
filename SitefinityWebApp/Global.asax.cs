@@ -2,19 +2,12 @@
 using System;
 using Telerik.Sitefinity;
 using System.Linq;
-using System.Resources;
 using System.Web;
-using Telerik.Sitefinity.Workflow;
-using Telerik.Sitefinity.News.Model;
-using System.Collections.Generic;
-using Telerik.Sitefinity.Modules.News;
-using Telerik.Sitefinity.GenericContent.Model;
 using Telerik.Sitefinity.Modules.News.Web.UI;
-using Telerik.Sitefinity.Modules.Libraries;
-using System.Web.UI;
 using Telerik.Sitefinity.Samples.Common;
 using Telerik.Sitefinity.Services;
-using Telerik.Sitefinity.Data.OA;
+using Telerik.Sitefinity.Abstractions;
+using Telerik.Sitefinity.Data;
 
 namespace SitefinityWebApp
 {
@@ -33,12 +26,12 @@ namespace SitefinityWebApp
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Telerik.Sitefinity.Abstractions.Bootstrapper.Initialized += new EventHandler<Telerik.Sitefinity.Data.ExecutedEventArgs>(Bootstrapper_Initialized);
+            Bootstrapper.Initialized += Bootstrapper_Initialized;
         }        
 
-        protected void Bootstrapper_Initialized(object sender, Telerik.Sitefinity.Data.ExecutedEventArgs args)
+        void Bootstrapper_Initialized(object sender, ExecutedEventArgs e)
         {
-            if (args.CommandName == "Bootstrapped")
+            if ((Bootstrapper.IsDataInitialized) && (e.CommandName == "Bootstrapped"))
             {
                 SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
                 SystemManager.RunWithElevatedPrivilege(worker);
@@ -74,10 +67,6 @@ namespace SitefinityWebApp
                 Rotator newsRotator = new Rotator();
                 SampleUtilities.AddControlToPage(new Guid(NewsRotatorWidgetPageId), newsRotator, "Content", "NewsRotator Widget");
             }            
-
-            //create admin
-            SampleUtilities.CreateUsersAndRoles();
-            //SampleUtilities.FrontEndAuthenticate();
         }
 
         private void CreateNewsItems()
