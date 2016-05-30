@@ -357,11 +357,10 @@ namespace NewsRotator
                                                          (item, image) => new { NewsItem = item, NewsImage = image }
                                                  );
 
-            //var news = App.WorkWith().NewsItems().Where(n => n.Status == ContentLifecycleStatus.Live).Get().Take(this.NewsLimit).ToList();
-            //var images = App.WorkWith().Images().Get().Where(i => i.Parent.Title == "Thumbnails" && i.Status == ContentLifecycleStatus.Live);
+            // var news = App.WorkWith().NewsItems().Where(n => n.Status == ContentLifecycleStatus.Live).Get().Take(this.NewsLimit).ToList();
+            // var images = App.WorkWith().Images().Get().Where(i => i.Parent.Title == "Thumbnails" && i.Status == ContentLifecycleStatus.Live);
             
             this.RadRotator1.DataSource = dataSource;
-            
 
             this.RadRotator1.ItemDataBound += new RadRotatorEventHandler(this.RadRotator1_ItemDataBound);
             this.RadRotator1.DataBind();
