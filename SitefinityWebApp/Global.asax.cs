@@ -1,13 +1,13 @@
-﻿using NewsRotator;
-using System;
-using Telerik.Sitefinity;
+﻿using System;
 using System.Linq;
 using System.Web;
+using Telerik.Sitefinity;
+using Telerik.Sitefinity.Abstractions;
+using Telerik.Sitefinity.Data;
 using Telerik.Sitefinity.Modules.News.Web.UI;
 using Telerik.Sitefinity.Samples.Common;
 using Telerik.Sitefinity.Services;
-using Telerik.Sitefinity.Abstractions;
-using Telerik.Sitefinity.Data;
+using NewsRotator;
 
 namespace SitefinityWebApp
 {
@@ -110,32 +110,26 @@ namespace SitefinityWebApp
 
         protected void Session_Start(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_Error(object sender, EventArgs e)
         {
-
         }
 
         protected void Session_End(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_End(object sender, EventArgs e)
         {
-
         }
     }
 }

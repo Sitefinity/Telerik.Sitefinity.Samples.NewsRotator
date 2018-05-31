@@ -306,8 +306,8 @@ namespace NewsRotator
                     App.Prepare(settings).WorkWith().Page().PageManager.Provider.SuppressSecurityChecks = true;
 
                     this.targetNewsPage = App.Prepare(settings).WorkWith().Pages()
-                                .Where(p => p.Page != null &&
-                                            p.Page.Controls.Where(c => c.ObjectType.StartsWith(typeof(NewsView).FullName)).Count() > 0)
+                                .Where(p => p.GetPageData() != null &&
+                                            p.GetPageData().Controls.Where(c => c.ObjectType.StartsWith(typeof(NewsView).FullName)).Count() > 0)
                                 .Get().FirstOrDefault();
                 } 
 
@@ -345,20 +345,19 @@ namespace NewsRotator
         /// <param name="controlContainer">The control container.</param>
         protected override void InitializeControls(GenericContainer controlContainer)
         {
-            var dataSource = App.WorkWith().NewsItems().Publihed()
-                                                 .Get().Take(this.NewsLimit)
-                                                 .ToList()
-                                                 .Join(
-                                                     App.WorkWith().Images().Publihed()
-                                                     .Get()
-                                                     .Where(i => i.Parent.Title == "Thumbnails"),
-                                                         item => item.Title.Value,
-                                                         image => image.Title.Value,
-                                                         (item, image) => new { NewsItem = item, NewsImage = image }
-                                                 );
-
-            // var news = App.WorkWith().NewsItems().Where(n => n.Status == ContentLifecycleStatus.Live).Get().Take(this.NewsLimit).ToList();
-            // var images = App.WorkWith().Images().Get().Where(i => i.Parent.Title == "Thumbnails" && i.Status == ContentLifecycleStatus.Live);
+            var dataSource = App.WorkWith()
+                .NewsItems()
+                .Where(n => n.Status == ContentLifecycleStatus.Live)
+                .Get().Take(this.NewsLimit)
+                .ToList()
+                .Join(App.WorkWith()
+                    .Images()
+                    .Get()
+                    .Where(i => i.Parent.Title == "Thumbnails" && i.Status == ContentLifecycleStatus.Live),
+                item => item.Title.Value,
+                image => image.Title.Value,
+                (item, image) => new { NewsItem = item, NewsImage = image }
+                );
             
             this.RadRotator1.DataSource = dataSource;
 

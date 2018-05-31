@@ -1,7 +1,6 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using System.Resources;
+using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -36,9 +35,5 @@ using System.Resources;
 [assembly: AssemblyVersion("4.3.1873.0")]
 [assembly: AssemblyFileVersion("4.3.1873.0")]
 [assembly: NeutralResourcesLanguageAttribute("en")]
-
-
-
 [assembly: Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Controllers.Attributes.ControllerContainer]
-
 [assembly: Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Controllers.Attributes.ResourcePackage]
