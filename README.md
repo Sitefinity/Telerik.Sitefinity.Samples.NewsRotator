@@ -1,9 +1,7 @@
 Progress.Sitefinity.Samples.NewsRotator
 ======================================
 
-### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The latest official version of Sitefinity that supports this sample is 9.1. Be aware that using a higher version could cause unexpected behavior. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
-
-[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.NewsRotator.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.NewsRotator.CI/)
+### Latest supported version: Sitefinity CMS 11.0.6700.0
 
 The NewsRotator sample project contains a simple Sitefinity CMS widget that rotates news and images present in the Sitefinity CMS backend. The sample features a custom designer that allows you to change the front-end rendering of the widget by switching its template. The NewsRotator widget is built on top of RadRotator widget, part of RadControls for ASP.NET Ajax delivered with this toolkit.
 
@@ -18,10 +16,9 @@ Using the NewsRotator sample, you can:
 
 ### Requirements
 
-* Sitefinity CMS license
-* .NET Framework 4.5
-* Visual Studio 2012
-* Microsoft SQL Server 2008R2 or later versions
+You must have a Sitefinity CMS license
+
+For more information, see the [System requirements](https://docs.sitefinity.com/system-requirements) for the  respective Sitefinity CMS version.
 
 ### Prerequisites
 
