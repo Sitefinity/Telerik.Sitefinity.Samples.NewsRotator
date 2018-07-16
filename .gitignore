@@ -186,5 +186,4 @@ FakesAssemblies/
 SitefinityWebApp/App_Data/Sitefinity/Configuration/*
 !SitefinityWebApp/App_Data/Sitefinity/Configuration/StartupConfig.config
 SitefinityWebApp/packages/*
-SitefinityWebApp/ResourcePackages/*
 SitefinityWebApp/.nuget/NuGet.exe
