@@ -46,7 +46,7 @@ Using the NewsRotator sample, you can:
  After the project initializes, the _License activation_ page appears.
 2. Activate your license.  
  For more information, see [Activate a license](http://docs.sitefinity.com/activate-a-license).
-3. Setuo the project using procedure using procedure [Setup the project](https://docs.sitefinity.com/configure-and-start-a-project).
+3. Setup the project using procedure using procedure [Setup the project](https://docs.sitefinity.com/configure-and-start-a-project).
 4. To login into the Sitefinity CMS backend, use the following credentials:  
  **Username:** admin  
  **Password:** password
