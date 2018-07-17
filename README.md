@@ -1,4 +1,4 @@
-NewsRotator sample project
+NewsRotator sample widget
 ======================================
 
 >**Latest supported version**: Sitefinity CMS 11.0.6700.0
